@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contactez-nous</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    nav a {
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      padding: 15px;
+      margin-top: 100px;
+ 
+    }
+
+
+    .contact-container {
+      background: #222;
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+      color: #00ffaa;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      background: #333;
+      border: 2px solid #555;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 15px;
+      transition: border 0.3s, background 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #00ffaa;
+      background: #2a2a2a;
+      outline: none;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #00ffaa, #00c2ff);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #000;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0, 255, 170, 0.3);
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  </head>
+ <!-- ✅ Barre de navigation centrée -->
+<div class="contact-container">
+ <nav>
+    <a href="TEST.HTML">Home</a>
+    <a href="Product.html">Products</a>
+    <a href="About us.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</body>
+    <h2>Contactez-nous</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Votre nom" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Votre email" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Votre message..." required></textarea>
+      </div>
+      <button type="submit" class="contact-btn">Envoyer le message</button>
+    </form>
+    <p class="footer-note">Nous vous répondrons dans les plus brefs délais. 💬</p>
+  </div>
+
+</body>
+</html>

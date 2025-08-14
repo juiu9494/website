@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f7ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077cc;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      gap: 50px;
+    }
+
+    .hero-image {
+      flex: 1;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 38px;
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .hero-text button {
+      background-color: #0077cc;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero-text button:hover {
+      background-color: #005fa3;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding-top: 30px;
+      }
+    }
+      .main-content h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #00ffaa;
+    }
+
+    .main-content p {
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .login-section {
+      background: #1f1f1f;
+      padding: 40px;
+      border-top: 1px solid #444;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .login-section h2 {
+      color: #00c2ff;
+      margin-bottom: 20px;
+    }
+
+    .login-form {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #333;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #00ffaa, #00c2ff);
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-form button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <nav>
+      <a href="TEST.HTML">Home</a>
+      <a href="Product.html">Products</a>
+      <a href="About us.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-image">
+      <img src="https://th.bing.com/th/id/R.bbe5486710c848c029351dc3d77169a8?rik=Vc%2f0k%2fBCsqHVdQ&pid=ImgRaw&r=0" alt="Shoe Image">
+    </div>
+    <div class="hero-text">
+      <h1>Discover Our New Collection</h1>
+      <p>Style meets comfort. Explore our latest range of shoes designed for everyday wear. Available in all sizes from 30 to 47.</p>
+      <button onclick="window.location.href='Product.html'">Shop Now</button>
+    </div>
+  </section>
+  <!-- ✅ Contenu principal -->
+  <div class="main-content">
+
+  <!-- ✅ Section de connexion -->
+  <div class="login-section">
+    <h2>Se connecter à votre compte</h2>
+    <form class="login-form">
+      <input type="email" placeholder="Adresse email" required>
+      <input type="password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+
+  <!-- ✅ Pied de page -->
+  <footer>
+    © 2025 VotreSite.com — Tous droits réservés.
+  </footer>
+    
+</body>
+</html>
